@@ -43,7 +43,3 @@ SELECT MAX(joindate) AS latest
 SELECT firstname, surname, joindate
 	FROM cd.members
 	WHERE joindate = ( SELECT MAX(joindate) from cd.members );
-
-/*
-Joins
-*/
